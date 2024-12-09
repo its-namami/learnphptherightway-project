@@ -1,0 +1,39 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+table tr th, table tr td {
+  padding: 5px;
+  border: 1px #eee solid;
+}
+tfoot tr th, tfoot tr td {
+  font-size: 20px;
+}
+tfoot tr th {
+  text-align: right;
+}
+
+.left-right{
+  display: flex;
+  justify-content: center;
+  margin-top: 5vh;
+}
+
+.lr-element{
+  border: 1px solid blueviolet;
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.lr-element h3{
+  position: absolute; 
+  top: -40px;
+  left: 0; 
+  right: 0; 
+  margin-inline: auto; 
+  width: fit-content;
+}

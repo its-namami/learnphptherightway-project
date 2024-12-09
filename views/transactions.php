@@ -2,26 +2,7 @@
 <html>
     <head>
         <title>Transactions</title>
-        <style>
-            table {
-                width: 100%;
-                border-collapse: collapse;
-                text-align: center;
-            }
-
-            table tr th, table tr td {
-                padding: 5px;
-                border: 1px #eee solid;
-            }
-
-            tfoot tr th, tfoot tr td {
-                font-size: 20px;
-            }
-
-            tfoot tr th {
-                text-align: right;
-            }
-        </style>
+        <link rel="stylesheet" href="views/style.css">
     </head>
     <body>
         <table>
@@ -34,20 +15,20 @@
                 </tr>
             </thead>
             <tbody>
-                <!-- YOUR CODE -->
+                <?= arrayToTable($lines)?>
             </tbody>
             <tfoot>
                 <tr>
                     <th colspan="3">Total Income:</th>
-                    <td><!-- YOUR CODE --></td>
+                    <td>$<?=getIncomes($allMoney)?></td>
                 </tr>
                 <tr>
                     <th colspan="3">Total Expense:</th>
-                    <td><!-- YOUR CODE --></td>
+                    <td>$<?=getExpenses($allMoney)?></td>
                 </tr>
                 <tr>
                     <th colspan="3">Net Total:</th>
-                    <td><!-- YOUR CODE --></td>
+                    <td>$<?=netTotal($allMoney)?></td>
                 </tr>
             </tfoot>
         </table>
